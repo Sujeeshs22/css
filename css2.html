@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>css2-IANA-managed Reserved Domain</title>
+        <link rel="stylesheet" href="styles1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&amp;family=Oswald:wght@300&amp;family=Poppins&amp;display=swap"
+            rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                list-style: none;
+                text-decoration: none;
+              }
+              
+              body {
+                font-family: "Noto Sans", sans-serif;
+                color: #555555;
+              }
+              
+              /* header */
+              .header {
+                max-width: 100%;
+                height: 131px;
+                background-color: #ebeeef;
+              }
+              
+              /* image */
+              .logo {
+                width: 241px;
+                height: 71px;
+                margin: 22px 0px 0px 95px;
+              }
+              
+              /* navbar */
+              .navbar {
+                position: absolute;
+                right: 105px;
+                top: 43px;
+                font-size: 16px;
+              }
+              
+              /* navbar list  */
+              .nav {
+                display: inline;
+                margin: 0px 5px;
+              }
+              
+              .nav a {
+                color: #555555;
+              }
+              
+              a:hover {
+                color: rgb(155, 205, 221);
+              }
+              
+              /* main container  */
+              .container {
+                max-width: 100%;
+              }
+              
+              .section {
+                height: auto;
+                display: flex;
+                flex-direction: row-reverse;
+                font-size: 13px;
+                padding: 25px 50px;
+                width: 100%;
+              }
+              
+              /* box 1 */
+              .box1 {
+                width: 73%;
+                margin-left: 10px;
+                font-size: 16px;
+                padding: 0px 25px 0px 0px;
+              }
+              
+              .box1 h1,
+              h2,
+              p {
+                margin: 0px 0px 13px 0px;
+                padding: 5px 0px 4px 0px;
+              }
+              
+              .box1 h1 {
+                color: black;
+                font-size: 28.5px;
+              }
+              
+              .box1 h2 {
+                font-size: 24.5px;
+                color: #545a64;
+                font-weight: normal;
+              }
+              
+              /* .box1 p {
+                font-size: 15.5px;
+              } */
+              
+              /* table  */
+              
+              div.table-iana {
+                font-weight: normal;
+                font-style: normal;
+                font-family: inherit;
+                margin-bottom: 14px;
+              }
+              
+              .main-table {
+                border: none;
+                border-collapse: collapse;
+                text-align: left;
+                width: 100%;
+                height: 350px;
+              }
+              
+              #table-body tr:hover {
+                background-color: #f4f3f9;
+              }
+              
+              #table-body {
+                background-color: #fafafc;
+              }
+              
+              .main-table th {
+                text-transform: uppercase;
+                color: #9d9d9d;
+              }
+              
+              #domains {
+                text-transform: lowercase;
+                color: #868cb6;
+              }
+              
+              .main-table td {
+                padding-left: 7px;
+              }
+              
+              #table-body {
+                border-top: 2px solid #5eb9e6;
+                border-bottom: 2px solid #5eb9e6;
+              }
+              
+              .main-table th {
+                font-size: 11px;
+                font-weight: normal;
+                padding-left: 7px;
+                color: #555555;
+              }
+              /* box1,table end */
+              
+              /* box 2 starting */
+              .box2 {
+                width: 228px;
+                height: fit-content;
+                margin: 64px 10px 0px;
+                background-color: #fcfcfc;
+                border: 1px #f0f0f0 solid;
+                border-radius: 5px;
+              }
+              
+              .box2 ul {
+                font-size: 12px;
+                margin: 0px;
+                color: #555555;
+              }
+              
+              .box2 li {
+                padding: 0px 0px 6px 9px;
+              }
+              
+              #onhover:hover {
+                background-color: #f4f3f9;
+              }
+              
+              .box2-heading {
+                background: #f4f3f9;
+                padding: 4px 10px;
+                margin: 0px;
+                font-size: 12.5px;
+                color: #333;
+                font-weight: normal;
+                margin-bottom: 14px;
+              }
+              
+              .box2 a {
+                color: #555555;
+              }
+              
+              /* box2 ul li resverd domain */
+              #bold-text {
+                color: #000;
+                font-weight: 700;
+              }
+              
+              /* footer */
+              
+              footer {
+                max-width: 100%;
+                height: auto;
+                background: #ebeeef;
+                margin: 0px auto;
+                padding: 25px 0px;
+              }
+              
+              footer a:hover,
+              #policy a:hover {
+                color: #5eb9e6;
+              }
+              
+              .footer-navigation li {
+                display: inline;
+                color: #9999a0;
+                padding: 0px 0px 0px 0px;
+                font-weight: normal;
+                margin: 0px 9px;
+              }
+              
+              .footer-navigation a,
+              #policy {
+                color: #9999a0;
+                font-size: 11.5px;
+                font-weight: normal;
+              }
+              
+              div.footer-block {
+                margin: 10px 100px 0px;
+                max-width: 850px;
+                padding: 0px 19px;
+              }
+              
+              .footer-navigation {
+                margin-bottom: 26px;
+              }
+              
+              .footer-navigation #hover,
+              #policy a {
+                font-weight: 900;
+              }
+              
+              div.services p {
+                display: inline;
+                margin: 0px 5px;
+              }
+              .services span {
+                margin-right: 10px;
+              }
+        </style>
+
+    <body>
+        <!-- navbar -->
+        <header class="header">
+            <img class="logo" src="https://www.iana.org/_img/2022/iana-logo-header.svg" alt="iana-logo" />
+            <nav class="navbar">
+                <ul>
+                    <li class="nav"><a href="">Domains</a></li>
+                    <li class="nav"><a href="">Protocols</a></li>
+                    <li class="nav"><a href="">Numbers</a></li>
+                    <li class="nav"><a href="">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- content -->
+        <main class="container">
+          <section class="section">
+            <div class="box1">
+              <h1>IANA-managed Reserved Domains</h1>
+              <p>
+                Certain domains are set aside, and nominally registered to “IANA”, for
+                specific policy or technical purposes.
+              </p>
+              <h2>Example domains</h2>
+              <p>
+                As described in <a href="#">RFC 2606 </a>and<a href="#"> RFC 6761 </a>a number of domains such as
+                example.com and example.org are maintained for documentation purposes.
+                These domains may be used as illustrative examples in documents
+                without prior coordination with us. They are not available for
+                registration or transfer.
+              </p>
+              <h2>Test IDN top-level domains</h2>
+              <p>
+                These domains were temporarily delegated by IANA for the <a href="#">IDN
+                  Evaluation</a> being conducted by <a href="#">ICANN.</a>
+              </p>
+              <div class="table-iana">
+                <table class="main-table">
+                  <thead>
+                    <tr>
+                      <th>Domain</th>
+                      <th>Domain (A-label)</th>
+                      <th>Language</th>
+                      <th>Script</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-body">
+                    <tr>
+                      <td>إختبار</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--KGBECHTV</a></span>
+                      </td>
+                      <td>Arabic</td>
+                      <td>Arabic</td>
+                    </tr>
+                    <tr>
+                      <td>آزمایشی</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--HGBK6AJ7F53BBA</a></span>
+                      </td>
+                      <td>Persian</td>
+                      <td>Arabic</td>
+                    </tr>
+                    <tr>
+                      <td>测试</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--0ZWM56D</a></span>
+                      </td>
+                      <td>Chinese</td>
+                      <td>Han (Simplified variant)</td>
+                    </tr>
+                    <tr>
+                      <td>測試</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--G6W251D</a></span>
+                      </td>
+                      <td>Chinese</td>
+                      <td>Han (Traditional variant)</td>
+                    </tr>
+                    <tr>
+                      <td>испытание</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--80AKHBYKNJ4F</a></span>
+                      </td>
+                      <td>Russian</td>
+                      <td>Cyrillic</td>
+                    </tr>
+                    <tr>
+                      <td>परीक्षा</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--11B5BS3A9AJ6G</a></span>
+                      </td>
+                      <td>Hindi</td>
+                      <td>Devanagari (Nagari)</td>
+                    </tr>
+                    <tr>
+                      <td>δοκιμή</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--JXALPDLP</a></span>
+                      </td>
+                      <td>Greek, Modern (1453-)</td>
+                      <td>Greek</td>
+                    </tr>
+                    <tr>
+                      <td>테스트</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--9T4B11YI5A</a></span>
+                      </td>
+                      <td>Korean</td>
+                      <td>Hangul (Hangŭl, Hangeul)</td>
+                    </tr>
+                    <tr>
+                      <td>טעסט</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--DEBA0AD</a></span>
+                      </td>
+                      <td>Yiddish</td>
+                      <td>Hebrew</td>
+                    </tr>
+                    <tr>
+                      <td>テスト</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--ZCKZAH</a></span>
+                      </td>
+                      <td>Japanese</td>
+                      <td>Katakana</td>
+                    </tr>
+                    <tr>
+                      <td>பரிட்சை</td>
+                      <td>
+                        <span><a id="domains" href="#">XN--HLCJ6AYA9ESC7A</a></span>
+                      </td>
+                      <td>Tamil</td>
+                      <td>Tamil</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2>Policy-reserved domains</h2>
+              <p>
+                We act as both the registrant and registrar for a select number of
+                domains which have been reserved under policy grounds. These
+                exclusions are typically indicated in either technical standards (RFC
+                documents), or <a href="#">contractual limitations.</a><br><br> Domains which are described as
+                registered to IANA or ICANN on policy grounds are not available for
+                registration or transfer, with the exception of country-name.info
+                domains. These domains are available for release by the ICANN
+                Governmental Advisory Committee Secretariat.
+              </p>
+              <h2>Other Special-Use Domains</h2>
+              <p>
+                There is additionally a <a href="#">Special-Use Domain </a>Names registry documenting
+                special-use domains designated by technical standards. For further
+                information, see <a href="#">Special-Use Domain Names </a>(RFC 6761).
+              </p>
+            </div>
+            <!-- box2 -->
+            <div class="box2">
+              <h2 class="box2-heading">Domain Names</h2>
+              <ul>
+                <li id="onhover"><a href="#">Overview</a></li>
+                <li id="onhover"><a href="#">Root Zone Management</a></li>
+                <li id="onhover"><a href="#">.INT Registry</a></li>
+                <li id="onhover"><a href="#">.ARPA Registry</a></li>
+                <li id="onhover"><a href="#">IDN Practices Repository</a></li>
+                <li id="onhover"><a href="#">Root key Signing Key(DNSSEC)</a></li>
+                <li><a id="bold-text" href="#">Reserved Domains</a></li>
+              </ul>
+            </div>
+            </div>
+          </section>
+        </main>
+        <!-- footer  -->
+        <footer>
+          <div class="footer-block">
+            <table class="footer-navigation">
+              <tr>
+                <td><a id="hover" href="#">Domain Names</a></td>
+                <td>
+                  <ul>
+                    <li><a href="/">Root Zone Registry</a></li>
+                    <li><a href="#">.INT Registry</a></li>
+                    <li><a href="/">.ARPA Registry</a></li>
+                    <li><a href="#">IDN Repository</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><a id="hover" href="#">Number resources</a></td>
+                <td>
+                  <ul>
+                    <li><a href="/">Abuse Information</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><a id="hover" href="#">Protocols</a></td>
+                <td>
+                  <ul>
+                    <li><a href="/">Protocols Registry</a></li>
+                    <li><a href="#">Time Zone Databse</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><a id="hover" href="#">About Us</a></td>
+                <td>
+                  <ul>
+                    <li><a href="/">Presentations</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="/">Performance</a>
+                    <li><a href="/">Reviews</a>
+                    <li><a href="/">Excellence</a>
+                    <li><a href="/">Contact Us</a>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <p id="policy">The IANA functions coordinate the Internets globally unique identifiers, and are provided by <a
+                id="policy" href="#"> Public Technical Identifiers</a>, an affiliate of <a id="policy" href="#">ICANN.</a>
+            </p>
+            <!-- services-block -->
+            <div class="services">
+              <span id="policy"><a id="policy" href="#">Privacy Policy</a></span><span id="policy"><a id="policy"
+                  href="#">Terms
+                  of Service</a></span>
+            </div>
+          </div>
+        </footer>
+      </body>
+    
+    </html>
